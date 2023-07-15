@@ -7,7 +7,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Empty from "./Empty";
 import fetchData from "../helper/apiCall";
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "http://localhost:5000/api";
 
 const Users = () => {
   const [users, setUsers] = useState([]);

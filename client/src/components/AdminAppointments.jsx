@@ -9,7 +9,7 @@ import fetchData from "../helper/apiCall";
 import "../styles/user.css";
 
 
-axios.defaults.baseURL = process.env.REACT_APP_SERVER_DOMAIN;
+axios.defaults.baseURL = "http://localhost:5000/api";
 
 const AdminAppointments = () => {
   const [appointments, setAppointments] = useState([]);
